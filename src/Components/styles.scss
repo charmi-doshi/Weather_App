@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  margin: 20rem 0;
+  width: 50rem;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  .card-image {
+    background: linear-gradient(#83eaf1, #63a4ff);
+    img {
+      width: 20rem;
+      margin-top: 4rem;
+    }
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    padding: 1rem;
+    .card-header {
+      font-weight: bolder;
+      font-size: 2rem;
+      margin: 1rem;
+    }
+    .card-details{
+        display: flex;
+        flex-direction: column;
+        .cityName{
+            font-size: 2rem;
+            margin:2rem;
+        }
+        label{
+            margin-left: 2rem;
+            font-weight: bolder;
+            span{
+                margin-left: 10rem;
+                color:#a7a7a7;
+            }
+        }
+        .temperature{
+            font-size: 2rem;
+            margin-left: 20rem;
+            top:-3.5rem;
+            position:relative;
+        }
+    }
+  }
+}
